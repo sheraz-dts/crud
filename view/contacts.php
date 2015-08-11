@@ -34,6 +34,7 @@
         <table class="contacts" border="0" cellpadding="0" cellspacing="0">
             <thead>
                 <tr>
+                
                     <th><a href="?orderby=name">Name</a></th>
                     <th><a href="?orderby=phone">Phone</a></th>
                     <th><a href="?orderby=email">Email</a></th>
