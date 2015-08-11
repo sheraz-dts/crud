@@ -30,9 +30,9 @@
         </style>
     </head>
     <body>
-    	<h1>User Contacts</h1>
+    	<h1>Student Information List</h1>
     	<br><br>
-        <div><a href="index.php?op=new">Add New Contact</a></div>
+        <div><a href="index.php?op=new">Add a New Contact</a></div>
         <br><br>
         <table class="contacts" border="0" cellpadding="0" cellspacing="0">
             <thead>
