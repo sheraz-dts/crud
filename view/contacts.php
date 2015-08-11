@@ -30,7 +30,10 @@
         </style>
     </head>
     <body>
+    	<h1>User Contacts</h1>
+    	<br><br>
         <div><a href="index.php?op=new">Add New Contact</a></div>
+        <br><br>
         <table class="contacts" border="0" cellpadding="0" cellspacing="0">
             <thead>
                 <tr>
@@ -38,7 +41,7 @@
                     <th><a href="?orderby=phone">Phone</a></th>
                     <th><a href="?orderby=email">Email</a></th>
                     <th><a href="?orderby=address">Address</a></th>
-                    <th>Action</th>
+                    <th><a href="#">Actions</a></th>
                 </tr>
             </thead>
             <tbody>
@@ -48,7 +51,7 @@
                     <td><?php print htmlentities($contact->phone); ?></td>
                     <td><?php print htmlentities($contact->email); ?></td>
                     <td><?php print htmlentities($contact->address); ?></td>
-                    <td><a href="index.php?op=delete&id=<?php print $contact->id; ?>">[X]</a></td>
+                    <td><a href="index.php?op=delete&id=<?php print $contact->id; ?>"><img src="images/delete.png"></a></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
