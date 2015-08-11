@@ -74,6 +74,11 @@ class ContactsService {
         }
     }
     
+    /**
+     * To delete contacts
+     * @param int $id
+     * @throws Exception
+     */
     public function deleteContact( $id ) {
         try {
             $this->openDb();
