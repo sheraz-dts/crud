@@ -91,6 +91,11 @@ class ContactsController {
         include 'view/contact.php';
     }
     
+    /**
+     * Method to show error
+     * @param unknown $title
+     * @param unknown $message
+     */
     public function showError($title, $message) {
         include 'view/error.php';
     }
