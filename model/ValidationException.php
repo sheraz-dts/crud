@@ -1,6 +1,6 @@
 <?php
 
-//this is validationexception class
+// Class for ValidationException
 class ValidationException extends Exception {
     
     private $errors = NULL;

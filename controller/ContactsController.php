@@ -1,5 +1,5 @@
 <?php
-// Test Comment
+// include contactsService file
 require_once 'model/ContactsService.php';
 
 class ContactsController {
