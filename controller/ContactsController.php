@@ -82,7 +82,7 @@ class ContactsController {
         
         $this->redirect('index.php');
     }
-    
+    //show method starts here
     public function showContact() {
         $id = isset($_GET['id'])?$_GET['id']:NULL;
         if ( !$id ) {
