@@ -5,6 +5,7 @@ require_once 'model/ContactsService.php';
 class ContactsController {
     
     private $contactsService = NULL;
+    private $errors = '';
     
     public function __construct() {
         $this->contactsService = new ContactsService();
@@ -13,7 +14,7 @@ class ContactsController {
     public function redirect($location) {
         header('Location: '.$location);
     }
-    //a comment
+  
     public function handleRequest() {
         $op = isset($_GET['op'])?$_GET['op']:NULL;
         try {
