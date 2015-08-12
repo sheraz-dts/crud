@@ -39,7 +39,7 @@ class ContactsController {
         $contacts = $this->contactsService->getAllContacts($orderby);
         include 'view/contacts.php';
     }
-    
+    //comment to save method
     public function saveContact() {
        
         $title = 'Add new contact';
