@@ -40,7 +40,7 @@ class ContactsController {
         include 'view/contacts.php';
     }
     /**
-     * comment to save contact
+     * Comment to saveContact
      */
     public function saveContact() {
        
