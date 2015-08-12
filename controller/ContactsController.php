@@ -33,15 +33,15 @@ class ContactsController {
             $this->showError("Application error", $e->getMessage());
         }
     }
-    /**
-     * Method to show contact list
-     */
+    
     public function listContacts() {
         $orderby = isset($_GET['orderby'])?$_GET['orderby']:NULL;
         $contacts = $this->contactsService->getAllContacts($orderby);
         include 'view/contacts.php';
     }
-    
+    /**
+     * comment to save contact
+     */
     public function saveContact() {
        
         $title = 'Add new contact';
