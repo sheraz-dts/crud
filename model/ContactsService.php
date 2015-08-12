@@ -24,7 +24,7 @@ class ContactsService {
     public function __construct() {
         $this->contactsGateway = new ContactsGateway();
     }
-    
+    //start 
     public function getAllContacts($order) {
         try {
             $this->openDb();
