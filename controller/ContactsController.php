@@ -13,7 +13,7 @@ class ContactsController {
     public function redirect($location) {
         header('Location: '.$location);
     }
-    
+    //a comment
     public function handleRequest() {
         $op = isset($_GET['op'])?$_GET['op']:NULL;
         try {
@@ -33,7 +33,7 @@ class ContactsController {
             $this->showError("Application error", $e->getMessage());
         }
     }
-    
+    //list function started
     public function listContacts() {
         $orderby = isset($_GET['orderby'])?$_GET['orderby']:NULL;
         $contacts = $this->contactsService->getAllContacts($orderby);
