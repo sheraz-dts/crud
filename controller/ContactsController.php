@@ -13,7 +13,10 @@ class ContactsController {
     public function redirect($location) {
         header('Location: '.$location);
     }
-    //a comment
+    
+    /**
+     * Method to handle requests
+     */
     public function handleRequest() {
         $op = isset($_GET['op'])?$_GET['op']:NULL;
         try {
@@ -33,13 +36,19 @@ class ContactsController {
             $this->showError("Application error", $e->getMessage());
         }
     }
-    //list function started
+    
+    /**
+     * Method to list user contacts
+     */
     public function listContacts() {
         $orderby = isset($_GET['orderby'])?$_GET['orderby']:NULL;
         $contacts = $this->contactsService->getAllContacts($orderby);
         include 'view/contacts.php';
     }
     
+    /**
+     * Method to save user contacts
+     */
     public function saveContact() {
        
         $title = 'Add new contact';
